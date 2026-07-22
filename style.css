@@ -1,1 +1,13 @@
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import norm, binom, f_oneway, chi2_contingency, kruskal, shapiro, ttest_1samp, ttest_rel, ttest_ind,zscore
+from scipy.stats import pearsonr, spearmanr
+from statsmodels.graphics.gofplots import qqplot
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+warnings.filterwarnings("ignore", category=UserWarning)
+pd.options.mode.chained_assignment = None 
+yulu=pd.read_csv("/kaggle/input/yuluu-hypothesis-tesiting/Yulu.csv")
+yulu.head()
